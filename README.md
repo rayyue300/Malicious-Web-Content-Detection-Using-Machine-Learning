@@ -93,3 +93,15 @@ However, I see
 > // Purpose - This file acts as a mediator between the client side popup.js and the server side test.py. // It gets the HTML contents which acts as input to the suite of python files. <br /> <b>Warning</b>: Cannot modify header information - headers already sent by (output started at /Library/WebServer/Documents/Malicious-Web-Content-Detection-Using-Machine-Learning/clientServer.php:1) in <b>/Library/WebServer/Documents/Malicious-Web-Content-Detection-Using-Machine-Learning/clientServer.php</b> on line <b>5</b><br /> SAFE
 
 Something is wrong in the clientServer.php
+
+### Fix the Comments Issue
+1. Open clientServer.php
+1. Cut the first two lines
+
+   ```
+   // Purpose - This file acts as a mediator between the client side popup.js and the server side test.py.
+   // It gets the HTML contents which acts as input to the suite of python files.
+   ```
+
+1. Paste under ```header("Access-Control-Allow-Origin: *");```
+1. Save and try the extension again
