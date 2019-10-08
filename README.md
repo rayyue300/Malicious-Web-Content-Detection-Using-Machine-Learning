@@ -4,11 +4,8 @@
 This repository is forked from [philomathic-guy](https://github.com/philomathic-guy/Malicious-Web-Content-Detection-Using-Machine-Learning).
 I'm just trying to run and mark down what I've done to execute the program.
 
----
-
 ## Prior Work Done
-I created an conda environment with Python 2.7.
-(I choose 2.7 because the code support Python 2 only)
+Create an conda environment with Python 2.7. (The code support Python 2 only)
 ```
 conda create --name py2.7 python=2.7
 ```
@@ -18,14 +15,12 @@ Activate the environment
 conda activate py2.7
 ```
 
-Confirm the environment is activated and Python 3.6 is being used
+Confirm the environment is activated and Python 2.7 is being used
 ```
 python2 -V
 ```
 
-Then I fork the project and clone to my Macbook
-
----
+Then, I fork the project and clone to my Macbook
 
 ## Environment Setup
 ### Python and Packages
@@ -95,13 +90,14 @@ However, I see
 Something is wrong in the clientServer.php
 
 ### Fix the Comments Issue
-1. Open clientServer.php
-1. Cut the first two lines
+Open "clientServer.php".
 
-   ```
-   // Purpose - This file acts as a mediator between the client side popup.js and the server side test.py.
-   // It gets the HTML contents which acts as input to the suite of python files.
-   ```
+Cut the first two lines.
+```
+// Purpose - This file acts as a mediator between the client side popup.js and the server side test.py.
+// It gets the HTML contents which acts as input to the suite of python files.
+```
 
-1. Paste under ```header("Access-Control-Allow-Origin: *");```
-1. Save and try the extension again
+Paste under ```header("Access-Control-Allow-Origin: *");```.
+
+Save and try the extension again.
