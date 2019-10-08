@@ -7,20 +7,20 @@ I'm just trying to run and mark down what I've done to execute the program.
 ---
 
 ## Prior Work Done
-I created an conda environment with Python 3.6.
-(I choose 3.6 because 3.7 may be too new that something may not support)
+I created an conda environment with Python 2.7.
+(I choose 2.7 because the code support Python 2 only)
 ```
-conda create --name py3.6 python=3.6
+conda create --name py2.7 python=2.7
 ```
 
 Activate the environment
 ```
-conda activate py3.6
+conda activate py2.7
 ```
 
 Confirm the environment is activated and Python 3.6 is being used
 ```
-python3 -V
+python2 -V
 ```
 
 Then I fork the project and clone to my Macbook
@@ -48,7 +48,7 @@ conda install pip
 
 Use the pip inside the environment to install whois and google
 ```
-/anaconda3/envs/py3.6/bin/pip install whois google
+/anaconda3/envs/py2.7/bin/pip install whois google
 ```
 
 ### Web Server
