@@ -67,11 +67,29 @@ sudo chmod 777 markup.txt
 ```
 
 Find the path of the Python 3.6 in the conda environment
-My path is ```/anaconda3/envs/py3.6/bin/python3```
+My path is ```/anaconda3/envs/py2.7/bin/python2```
 
 Confirm the path is correct
 ```
-/anaconda3/envs/py3.6/bin/python3 -V
+/anaconda3/envs/py2.7/bin/python2 -V
 ```
-The output is ```Python 3.6.9 :: Anaconda, Inc.```
+The output is ```Python 2.7.16 :: Anaconda, Inc.```
 
+Modify the path of the Python 2.7 installation in clientServer.php as ```/anaconda3/envs/py2.7/bin/python2```
+
+Since I am not using the personal website (~/Sites/) but using the global one (/Library/WebServer/Documents), I don't have to modify LOCALHOST_PATH and DIRECTORY_NAME in features_extraction.py
+
+### Chrome
+1. Open Chrome.
+1. Go to ```chrome://extensions```
+1. Activate "Developer mode"
+1. Click on "Load unpacked"
+1. Select the "Extension" folder in this repository
+
+### Trial Run
+I openned Chrome and clicked the extension.
+Then, I clicked "SAFE OR NOT?"
+However, I see
+> // Purpose - This file acts as a mediator between the client side popup.js and the server side test.py. // It gets the HTML contents which acts as input to the suite of python files. <br /> <b>Warning</b>: Cannot modify header information - headers already sent by (output started at /Library/WebServer/Documents/Malicious-Web-Content-Detection-Using-Machine-Learning/clientServer.php:1) in <b>/Library/WebServer/Documents/Malicious-Web-Content-Detection-Using-Machine-Learning/clientServer.php</b> on line <b>5</b><br /> SAFE
+
+Something is wrong in the clientServer.php
