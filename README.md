@@ -101,3 +101,11 @@ Cut the first two lines.
 Paste under ```header("Access-Control-Allow-Origin: *");```.
 
 Save and try the extension again.
+
+## Test Results
+| Sites | Expected Results | Actual Results |
+| --- | --- | --- |
+| google.com | SAFE | SAFE |
+| bing.com | SAFE | SAFE |
+| learn.polyu.edu.hk | SAFE | PHISHING |
+| eie.polyu.edu.hk | SAFE | PHISHING |
