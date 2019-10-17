@@ -109,3 +109,32 @@ Save and try the extension again.
 | bing.com | SAFE | SAFE |
 | learn.polyu.edu.hk | SAFE | PHISHING |
 | eie.polyu.edu.hk | SAFE | PHISHING |
+
+## 23 Based Features Used
+### Address Bar Based
+1. The domain part of URL has IP?
+1. The URL length is >75?
+1. Is URL shortening service used?
+1. Does '//' appear after 'https://' to redirect?
+1. Does the domain part of the URL contain '-'?
+1. Is the domain a subdomain?
+1. Is the domain expiring on a year?
+1. Is the favicon loaded from external domain?
+1. Does the domain part of the URL contain 'http' or 'https'?
+
+### Abnormal Based
+1. Does the webpage contain large percentage of external objects?
+1. Does the webpage contain large percentage of hyperlinks linked to external webpage?
+1. Does the webpage contain large percentage of meta/script/link tag using external source?
+1. Is the Server Form Handler using an external domain?
+1. Is there web form submitting data via 'mailto:'?
+1. Is the host name from Whois included in the URL?
+
+### HTML & JavaScript
+1. Is iframe redirection used?
+
+### Domain Based
+1. Is age of domain less than 6 months?
+1. Is the Alexa website rank outside top 100,000?
+1. Is the web page not indexed by Google?
+1. Does the host belong to top phishing IPs / domains based on 3rd party database?
