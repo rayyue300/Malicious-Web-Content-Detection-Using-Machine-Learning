@@ -110,7 +110,7 @@ Save and try the extension again.
 | learn.polyu.edu.hk | SAFE | PHISHING |
 | eie.polyu.edu.hk | SAFE | PHISHING |
 
-## 20 Based Features Used
+## 20 Features Used
 ### Address Bar Based
 1. The domain part of URL has IP?
 1. The URL length is >75?
